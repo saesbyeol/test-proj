@@ -1,0 +1,679 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>SIS - Teorija MI2</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="04d0f07b-38ba-47c8-a596-1f2b49558e3c" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📌</span></div><h1 class="page-title">SIS - Teorija MI2</h1></header><div class="page-body"><h1 id="9c7618fa-9794-47cc-b206-a240882c4cc2" class="">ISHOD 1.</h1><p id="a7b26c63-9ca4-48c8-a293-8ce851b3a12e" class="">1.  Objasniti što su tri aspekta sigurnosti (CIA)?</p><p id="66905072-dcc2-4cbd-b1dc-b10f78c34d81" class="">Povjerljivost → Osiguravanje tajnosti podataka (Bitno za slanje podataka mrežom, ali i za podatke u mirovanju, za zaštitu se koriste enkripcija i anonimizacija.); Integritet → Zaštita promjene informacije (može biti narušen na razne načine kao što su brisanje datoteke, mijenjanje datoteke. Za provjeru koristi se hash.); Dostupnost → Osiguravan dostupnost informacija odnosno sustava</p><p id="119b9980-14c1-426a-8505-8622f8a4d41e" class="">2.  Što je sigurnosni rizik?</p><p id="bc5cd876-d3fc-488e-baac-811f5db09e17" class="">Rizik je mogućnost realizacije neželjenog događaja koji može štetno utjecati na povjerljivost, integritet i raspoloživost informacija</p><p id="251ae7df-003b-4428-92db-9f2fc5f00291" class="">3.  Što su kontrole? Kakve kontrole prema načinu djelovanja postoje?</p><p id="f01e3218-ad0d-4b51-92f2-dc3a94727165" class="">Sigurnosne kontrole umanjuju rizik, to su politke, procedure, prakse i organizacijske strukture</p><p id="726e4766-7ee4-4e0e-8930-bdb3521c77bc" class="">Postoje tehničke i upravljačke kontrole</p><p id="510cc57b-b89a-4f6a-b5a4-4d65ab8a35bb" class="">4.  Opisati kvalitativni izračun rizika.</p><p id="7691b57f-4eb3-43db-a249-a92b947b822b" class="">5.  Na koje sve načine je moguće tretirati rizik? Pojasnite.</p><ul id="cb9a0277-4d52-4885-b505-1eaf04aa2bc6" class="bulleted-list"><li style="list-style-type:disc">Rizik je moguće tretirati na tri načina<ul id="d49f13f9-b6a9-4bdf-a411-7945272f281d" class="bulleted-list"><li style="list-style-type:circle">Umanjivanje → implemenatcij kontrola</li></ul><ul id="a44422fc-a8aa-4945-8a6f-b1547b6b045b" class="bulleted-list"><li style="list-style-type:circle">Prenošenje → eksternilizacija i osiguranje</li></ul><ul id="8b885e53-b9b4-48f0-ba1a-65dfe45c790f" class="bulleted-list"><li style="list-style-type:circle">Izbjegavanje → modifikacija procesa odnsono procesni reinžinjering</li></ul></li></ul><ul id="d54c7f10-b793-4719-b28a-3b649cf9f2fa" class="bulleted-list"><li style="list-style-type:disc">Rizik je potrebno periodički evaluirati i montinuirano nadzirati</li></ul><p id="643a1cbe-7883-4dbe-8b90-f555971af817" class="">6.  Što je ISO 27001 norma i čemu služi?</p><ul id="9e7840ef-b358-46ad-839b-3a22a5ad4ec4" class="bulleted-list"><li style="list-style-type:disc">Niz standarda IT Security-a koji pruža najbolje prakse i preporuke <ul id="dc28c18f-65e5-4b36-9560-c181c51d534a" class="bulleted-list"><li style="list-style-type:circle">Okvir za uspostavu, implementaciju, nadzor, reviziju i održavanje ISMS-a</li></ul><ul id="92da7b39-6461-4fab-a770-962d49033537" class="bulleted-list"><li style="list-style-type:circle">Neovisan je o organizaciji (banka, slastičarna, faks itd.)</li></ul><ul id="806a919a-32de-4323-a9ea-e7f6009745bd" class="bulleted-list"><li style="list-style-type:circle">Mogućnost firmi da se certificiraju</li></ul></li></ul><ul id="06ddea5c-3948-4be0-bba9-e107ab434ce4" class="bulleted-list"><li style="list-style-type:disc">Implementacija<ul id="d7507548-b19a-4d36-b807-4e940b5b7c0b" class="bulleted-list"><li style="list-style-type:circle">Potrebno osigurati sve resurse</li></ul><ul id="a20f74e8-a2e8-454b-93a9-fd87717b1393" class="bulleted-list"><li style="list-style-type:circle">Redovita procjena rizika</li></ul></li></ul><p id="d1557c32-596e-4d05-9c9a-712ea615c03c" class="">7.  Pojasnite CIS Top 20 kontrolni okvir? Zašto je učinkovit?
+Jedan je od naj-respeced kontrolnih okvira, te je javno dostupan</p><ul id="9e96947f-fc8d-48bc-9c0b-8397b4a5ff34" class="bulleted-list"><li style="list-style-type:disc">Foksuira se na aktivnosti koje mogu donijeti najveću korist</li></ul><ul id="98bce418-80dd-4b71-8ef8-f0671a212da7" class="bulleted-list"><li style="list-style-type:disc">Velik je broj uključenih</li></ul><ul id="4f26d745-cd36-4b87-87b5-847013a859e9" class="bulleted-list"><li style="list-style-type:disc">Učinkovit je zato što je jednostavan za pratiti, te ga se lako implementira.</li></ul><h1 id="0db75f5b-78cb-43f8-8b49-6b87f6905459" class="">ISHOD 4.</h1><p id="95b8d22c-536f-4bf0-9fed-53ee9e6356ec" class="">1. Koje su točke životnog ciklusa ranjivosti? Nacrtati životni ciklus.</p><p id="d70d952d-c60c-4e2a-bbb7-1cc6127d7b7f" class="">Trenutak javne objave informacija o ranjivosti → Trenutak izdavanja sigurnosne zakrpe → instalacija sigurnosne zakrpe.</p><p id="326b5d78-2260-4525-9eb5-7f4cc62b3946" class="">2. Što je exploit, što je ranjivost, što je 0-day ranjivost?
+Exploit je specijalizirani program koji iskorištava ranjivost. Ranjivost je slabost u sustavu, sigurnosnim procedurama, dizajnu ili implementaciji resursa. 0-day ranjivost je sigurnosni propust u računalnj aplikaciji koji je otkriven i poznat je samo napadačima prije nego što za njega zna proizvođač i javnost.</p><p id="43d393d7-6658-46b6-b3f6-a66604835612" class="">3. Što je period kritične izloženosti?</p><p id="c42e1ceb-657b-43c4-8a29-89baa8a7e6d9" class="">To je vremensko razdovlje od trenutka kada je ranjivost otkrivena do trenutka kada je objavljena zakrpa.</p><p id="1b84ed5e-db47-45a8-927b-c317dcf53d61" class="">4. Koje su tri tehnike koje možemo koristiti za otkrivanje i analizu ranjivosti?</p><p id="2d2337b0-61e6-449b-9bb6-cbf108a42a81" class="">Redovito skeniranje ranjivosti, definiranje prioriteza za uklanjanje ranjovisti, koristeći threat intelligence</p><p id="90f268da-0b68-4542-a5b1-4f1e3517faee" class="">5. Objasnite funkcionalnosti alata za procjenu ranjivosti (npr. Nessus)</p><p id="282ce213-6871-4df9-b2dd-7c53223c54df" class="">Nessus je vulnerability scanning alat koji skenira računalo, te ako pronađe neki vulnerablity alerta korisnika o istom. Nessus NE sprječava napade, koristi se samo za skeniranje, Nessus nije antivirus.</p><p id="c96739b2-d40d-4828-8805-098b1fa32949" class="">6. Čemu služi alat Metasploit?</p><p id="2bf0049c-a9ed-4cf3-92eb-3727791a7522" class="">Metasploit je alat koji služi za iskorištavanje ranjivosti. Sadrži stotine exploit programa koji su spremi za korištenje.</p><p id="34d8c1ed-b202-4e48-9100-bcb416411aa5" class="">7. Što su SIEM sustavi? Koje funkcionalnosti imaju?</p><p id="c0373448-ad35-400c-85a3-8b70614f8fa2" class="">SIEM sustavi su aplikacije koje omogućavaju centralno prikupljanje log zapisa, te analizu, korelaciju, pretraživanje i uzbunjivanje. Imaju dvije funkcionalnosti: SIM → log management i SEM → real-time monitoring i incident managing.</p><p id="e4ca9d37-ae51-41c3-bb4d-896cf3864957" class="">8.  Koja je prednost implementacije rješenja (u odnosu na SIEM) za naprednu detekciju na klijentima?</p><p id="d00a1faf-4918-4a45-85f6-434140f538ef" class="">Nedostatak SIEM rješenja je implementacija, jer je vrlo kompleksna, skupa i zahtjevna prema resursima. XDR je “bolja verzija” SIEM-a te pokriva prva dva SIEM scenarija.</p><p id="6a9727ef-3248-419f-b811-51ae39c07086" class="">9. Zašto je važno što prije otkriti neovlašteni upad u informacijski sustav?</p><p id="776bdbf4-a3a8-4428-9a02-be5fedc002df" class="">Nakon što hakeri upadnu u informacijski sustav, cilj im je proširiti se po cijelom sustavu (najčešće im je cilj doći do AD Controllera) važno ih je otkriti prije no što dođu do cilja, jer će s kontrolom AD sustava moći kontrolirati cijeli sustav.</p><p id="b8876427-924f-4a7d-817b-3f082fd1aff5" class="">10. Objasnite SQL Injection te mjere zaštite od istog?</p><p id="575115e9-3ce6-45e3-b444-f9fa8d54456b" class="">Napadač, preko forme u aplikaciji može poslati SQL query kojeg će baza u pozadini pokrenuti i korisniku vratiti tražene infromacije. Braniti se može koristeći procedure u bazi, ne dohvaćati informacije preko običnih query-a.</p><p id="94953ae4-f4fd-4de5-936d-1073daa94152" class="">11.  Objasnite Cross Site Scripting te mjere zaštite od istog?</p><p id="e4f27755-35aa-41f5-b9fb-b09ebf62ea17" class="">Slično kao SQL Injection, XSS (Cross side scripting) je tehnika injectanja JavaScripta na webpage. Najčešće se napadaju forme, gdje na inputu možemo poslati neki JavaScript kod, npr. možemo ukrati cookies ili tako nešto. Zaštiti od XSS napada se možemo escpeanjem charactera. npr. haker naiđe na vulerable stranicu, te želi testirati da li je XSS moguć, prvo će formi poslati ovakav JS kod: &lt;script&gt;alert(1337)&lt;/script&gt;. Programer može escapeati &lt;&gt; charactere, te ih server neće pročitati. Poruka će izgledati ovako: scriptalert(1337)/script.</p><p id="4a8b0828-fc90-4ed6-a6c3-2a913200e27c" class="">12.  Što je OWASP Top 10?
+OWASP top 10 je lista deset najčešćih prijetnji. To je web stranica kojoj je cilj povećati awerness o sigurnosti developerima.</p><ol type="1" id="3f279ff1-c42c-42fd-9e4e-f1e610ad144d" class="numbered-list" start="13"><li>Koja je razlika između penetracijskog testiranja i procjene ranjivosti putem alata?</li></ol><p id="e7c932ab-2704-4cf2-86e9-f4d84142cbe7" class="">Penetracijsko testiranje zapravo je procjena ranjivosti putem raznih alata, tako da nema razlike.</p><p id="154c1bbd-4606-4a06-897b-4eefaa7215a6" class="">14.  Kratko objasnite Shodan
+Shodan je search engine preko kojega se mogu pronaći svi uređaji koji su spojeni na internet koristeći service bannere (blok teksta koji opisuje servis koji se odvija).</p><p id="3c6c20ff-7b9c-4d78-a6f0-179378d23f6a" class="">15.  Objasnite koncept korelacije događaja. Zašto je korelacija temeljna na pravilima izazov?
+Korelacija omogućava pronalazak povezanosti između dva ili više sigurnosnih događaja.</p><h1 id="4a6589fb-71fb-4f04-a873-a84434081ca0" class="">ISHOD 5.</h1><p id="98cd8888-52f5-4a1a-83c1-e63ead494d83" class="">1.  Što su vatrozidi te što je nulto pravilo kod vatrozida? Što su vatrozidi nove generacije?</p><p id="d4ad6902-d2d5-4e27-89e1-beb10fe73d54" class="">Vatrozid je hardware ili software namjenjen za filtriranje mrežnog prometa. Osnovna funkcija vatrozida je zaštita računala od napada na mrežnoj razini. Nulto pravilo vatrozida kaže: <strong>odbaci sav mrežni promet.</strong></p><p id="c97e4663-8dff-405e-b022-1a3af802c050" class="">Vatrozidi nove generacije detaljno ispitivaju mrežni primet, te poboljšavaju kontrolu pristupa. Mogu se integrirati sa Threat intelligenceom, sadže black i white liste, detaljan logging sustav etc.</p><p id="4745b3ba-b659-4a7b-89bc-ec44575d7900" class="">2.  Zašto Gartner smatra da tvrtke trebaju imati pristup informacijskoj sigurnosti kao da su u stanju kontinuirane kompromitacije?</p><p id="dcab4552-3dc3-4d6b-83e3-d980b3495756" class="">Gratner to smatra zato što se firme previše oslanjaju na preventivne kontrole. Mnoge tvrtke previše vjeruju u prevenciju.</p><p id="8718c766-e5ad-4800-adf5-64ef715a8245" class="">3.  Na koje dvije stvari, koje su ključne da poslovanje dostigne svoje ciljeve, se odnosi kontinuitet poslovanja?</p><p id="4cc21edc-f037-49b3-a0f3-834fa1ab66de" class="">Isporuka otpornog poslovanja i zaštita reputacije.</p><p id="3fc3126f-d9a6-4702-8873-5a9ed739a5fd" class="">4.  Pojasnite analizu učinka na poslovanje (engl. Business Impact Analysis).</p><p id="2c5adf2a-3d98-4676-a6d1-bd23d1914d2c" class="">BIA je proces analize svih poslovnih aktivnosti, te kakav učinak će prekid jedne od poslovnih aktivnosti imati na cijelu organizaciju.</p><p id="532b6635-52ac-40bf-9850-69213ba16d1f" class="">5.  Što je polimorfizam?</p><p id="8c3bb843-7e34-4a41-80d6-cf812f183d15" class="">Polimorfizam je promjena tijela programa uz zadržavanje iste funkcionalnosti.</p><p id="193e99fd-4ebd-4d9f-a3f5-785b5e6d6a0b" class="">6.  Objasnite fileless maliciozne programe.</p><p id="dc2c32d0-3fb5-4f1e-b35d-5fcf2d2a6711" class="">Fileless malware je skripta koja se zapiše u Registry windowsa, to omogućuje malwareu da se pokrene s pokretanjem računala. Filesless malware je zapravo ta skripta koja je sastoji od niza komandi.</p><p id="e9b178ca-c651-4421-a3b5-ccc29a3c25a1" class="">7.  Objasnite termine „Indicators of compromise“ i „Indicators of attack“. Koja je razlika?</p><p id="88f5eee0-0588-44c3-87d4-39885c7c90e4" class="">IOC = indikatori komprimizacije, tj. indikator je li haker ušao u mrežu.
+IOA = indikatori koji se fokusiraju na detekciju namjera napadača, ponašanje napadača itd.</p><p id="e9b9e6ab-31e6-418a-adbe-f4520179169f" class="">8.  Što je Threat Intelligence? Navedite s kojim dijelovima sigurnosne infrastrukture možemo integrirati threat intelligence.</p><p id="86dfbb35-8551-479a-aafd-8b263bfad6d0" class="">Threat intelligence je prikupljanje, klasifikacija i iskorištavanje znanja o protivinicima. Threat intelligence se može integrirati sa SIEM sustavima, koriste ga SOC-ovi.</p><p id="396b5523-7823-4634-800c-7b3d61d985b8" class="">9.  Što su mreže malicioznih programa (engl. botneti)?</p><p id="2435d98a-a2a1-4cd4-b62c-69e0f6e238a3" class="">To je mreže zaraženih računala koje haker preko C&amp;C centra može kontrolirati u neke svoje svrhe. Najčešće je to cryptocurrency mining, DDOS napadi ili spam kampanje.</p><p id="20f71df6-8194-41a4-9290-13ef1475d7e5" class="">10.  Što su mrežni IDS/IPS sustavi?</p><p id="22aeaeb3-6fed-412a-a5da-09102721912b" class="">IDS/IPS sustavi detektiraji u sprječavaju neovlaštene aktivnosti.
+IDS (Intrusion Detection System) analizira i nadgleda mrežni promet, te traži znakove napada. IDS uspoređava aktivnost na mreži s bazom podataka prijetnji kako bi uočio napade.
+IPS (Intrusion Prevention System) odbija odabrani promet na mreži ako taj promet smatra malicioznim</p><p id="e5de4d7b-9191-483f-96bb-e0544f0abe5a" class="">11.  Pojasnite pojam APT. Koja je razlika u odnosu na tradicionalne napade? Zašto su APT napadi opasniji?</p><p id="dac7bab9-f81b-4f03-a4c8-39a2fb7a43fd" class="">APT ili Advanced Presistent Threat je termin kojeg je razvila američka vojska koji bi koristili za klasifikaciju napada čije detalje nisu smjeli otkriti javnosti. APT napadi su posebni po tome što zahtjevaju izrazito velike ljudske i novčane resurse, te ga mogu izvesti samo vlade ili velike organizacije. APT napadi su opasniji zbog toga što praktički imaju neograničene resurse, te zbog toga mogu exploitati 0-day vulnerability-e.</p><p id="cc912d9a-1cfb-4b9d-a43f-839d5607d0a7" class="">12.  Čemu služe sigurnosne vježbe? Pojasnite.</p><p id="769748f2-c9f7-46c7-b00f-62e3e3726348" class="">Sigurnosne vježbe služe poboljašnju sigurnosti neke firme, uzmimo za primjer penetracijski test. Nekom testeru biti će zadatak da izvana proba doći do nekih osjetljviih podataka unutar firme. Ako napadač to uspješno izvrši, firma će dobiti detaljnu analizu kako je napadač to uspio, te će moći podnjeti mjere zaštite tako da takav napad neće moći izvršiti drugi napadači.</p><p id="4baa4340-9d30-4df0-ba76-6b0cb8dffe96" class="">13.  Objasnite sustave za detekciju neovlaštenih aktivnosti na internoj mreži. Koja je korist takvih sustava? Kako se koristi strojno učenje?</p><p id="84789b77-dcef-4837-808c-99391079b09b" class="">14.  Objasnite ransomware. Zašto je fokus napadaca stavljen više na kompanije? Koje tehnike
+napada se koriste u takvim napadima na kompanije? </p><p id="6279de8f-b0bc-4b5b-847b-f9e90f0ab19e" class="">Ransomware je a type of malicious software designed to block access to a computer system until a sum of money is paid. Kompanije će platiti. Lateral movement, tj. širenje ransomwera interno.</p><p id="e4e44204-27f5-43c6-94f2-bb25d3dadbbc" class="">14.  Što je Mitre ATT&amp;CK?</p><p id="334da88e-bdf0-4e37-b81e-2e45874bcf50" class="">Mitre Attack framework je popis svih taktika i tehnika napada izvučenih iz pravih primjera.</p><p id="4985fc91-c76d-4175-91fd-213fa8b22c61" class="">
+</p></div></article></body></html>
