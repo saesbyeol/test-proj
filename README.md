@@ -26,6 +26,103 @@
 - Prednosti: jasno definiran pristup projektu, projekti su podjeljeni u logičke faze, detaljan plan projektnih aktivnosti, pregledi faza koji osiguravaju da projekt sadrži poslovnu opravdanost, kontrola upravljanja koja sprječava odstupanja od izvornog plana
 - Mane: nije učinkovit za manje projekte
 
+## Lean 
+
+- Identificiranje vrijednosti, eliminacija nepotrebnog viška, kontinuirano unaprjeđenje
+- Fokus na kupca
+	- Vrijednost definira kupac, ne proizvođač
+Kanban- meotada upravljanja zadacima i tijekom rada
+JIT | Just in Time - proizvodi se samo ono što je potrebno, kad je potrebno i u količinama koje su potrebne
+Lean Six Sigma - je filozofija poboljšanja koja se temelji na činjenicama i temelji se na podacima koja vrednuje prevenciju kvarova umjesto otkrivanje nedostatka
+Agile vs Lean 
+- Lean se obično primjenjuje na ponavljajući, predvidljiv proces i ima cilj poboljšati proces kako bi se napravio bolji proizvod
+- Agile se  s druge strane manje fokusira na proces, a više na to kako možemo napraviti bolji proizvod
+Koncept Lean proizvodnje se temelji na kontinuiranom poboljšanju sustava, u malim koracima, fokusiranom na odstranjivanje gubitka, radi postizanja kompetitivnosti
+Osnovno načelo lean proizvodnje je da se proizvodi točno ono što kupac želi, tj. vrstu, kvalitetu i količinu proizvoda izravno diktira potražnja tržišta
+
+## RACI
+
+Responsible: osoba odgovorna za izvršavanje zadatka
+Accountable: osoba koja donosi odluke i koja poduzima korake za zadatak
+Consulted: osoba s kojom će se komunicirati u svezi donošenja odluka i određenih zadataka
+Informed: osoba koja će biti izvještena o odlukama i poduzetih akcija tijekom projekta
+Koristi se da informira organizaciju o radnom preopterećenju svojih zaposlenika, smanjuje nesporazume, povećava produktivnost, štedi vrijeme 
+Prednosti - održavanje otvorene komunikacije sa svim sudionicima, izbjegavanje preopterećenja uključenih sa zadacima i nepotrebnim informacija, izbjegavamo previše ljudi koji žele nudit doprinos za neki zadatak, pomaže sudionicima da se pripreme za budući utjecaj projekta na njihov rad
+Nedostaci - može se provesti previše vremena za stvaranje RACI matrice za jednostavno projekte, uloge možda neće jasno ilustrirati članov doprinos u projektu, sudionici će biti zbunjeni ako ne razumiju razliku pojmova
+ARPA
+Accountable – osoba odgovorna za uspjeh biznisa
+Responsible – jedno ili dvoje ljudi koji su odgovorni da se rad unutar projekta odvija na svakodnevnoj bazi
+Participant – osobe koje izdvajaju vrijeme i resurse za podršku realizaciji projekta
+Advisor – ljudi koji su konzultirani na jedan ili više aspekta, ali nemaju autoritet donošenja odluke
+RASCI (isto kao RACI samo što ima i S(support)) - brzo riješite sukobe u projektu unutar grupa, učinkovito upravljanje projektima, uklonite sve zabune dodjeljivanjem specifičnih zadataka svakom članu projekte grupe
+
+## Scrum
+
+- je jednostavan okvir koji pomaže ljudima, timovima, organizacijama da stvore vrijednost kroz prilagodljiva rješenja za kompleksne probleme 
+Vrijednosti Scruma - otvorenost, predanost, usredotočenost, poštovanje, hrabrost
+Artefakti u Scrumu predstavljaju posao ili vrijednost
+Scrum definira 3 afrtefakta: 
+- Product backlog
+	- poredan i stalno promjenjiv
+	- akumulacija nedovršenog posla
+	- Product Backlog Item (PBI)
+	- obaveza: Cilj proizvoda
+- Sprint backlog
+	- Cilj Sprinta (ZAŠTO)
+	- Lista PBI-a (ŠTO)
+	- Plan (KAKO)
+	- obaveza: Cilj Sprinta
+- Inkrement
+	- nova verzija proizvoda
+	- dodatak prethodim verzijama
+	- upotrebljiv
+	- obaveza: Definicija Gotovog
+Događaji u Scrumu -prilike za pregled i prilagodbu artefakta, stvaraju rutinu i reduciraju potrebu za sastancima, osmišljeni da omoguće potrebnu transparentnost
+	Sprint
+	- Trajanje max 1 mjesec
+	- isporuka upotrebljivog Inkrementa
+	- Cilj Sprinta
+	- Opseg Sprinta
+	- održavanje kvalitete
+	Sprint Planinig
+	- Trajanje max 8 sati
+	- pitanja:
+		- zašto je ovaj Sprint vrijedan
+		- što se može odraditi u ovom Sprintu
+		- Kako će se obaviti izabrani posao
+	Daily Scrum
+	- Trajanje max 15 min
+	- isto vrijeme i mjesto svaki dan
+	- rezultat
+		- poboljšanje komunikacije
+		- identifikacija prepreka
+		- brže donošenje odluka
+	Sprint Review
+	- Trajanje max 4 sata
+	- provjera ishoda Sprinta s dionicima
+	- rasprava o napretku u stvaranju Cilja proizvoda
+	Sprint Retrospective
+	- Trajanje max 3 sata
+	- pozitivno i produktivno okruženje
+	- identifikacija smetnji
+	- planiranje načina kako povećati kvalitetu i  učinkovitost
+	- poduzimanje akcija 
+Scrum tim - mali tim profesionalaca koji je u svakom trenutku usredotočen na Cilj proizvoda
+	Developeri - predani stvaranju korisnog inkrementa, prilagođavaju Sprint Backlog
+	Product Owner - maksimiziranje vrijednosti proizvoda, odgovoran za upravljanje Product Backlogom
+	Scrum Master - uspostavlja, promovira i podržava Scrum, odgovoran za učinkovitost Scrum tima
+
+## Six Sigma
+
+- je metodološki koncept pomoću kojih poduzeća smanjuju: vrijeme za izvršavanje pojedinih taskova, broj grešaka i varijacija proizvoda.
+Povećava vjernost kupaca i moral zaposlenika
+Značenje pojma Six Sigma - Six Sigma je statistička sintagma koja se referira na postotak proizvoda bez defekata
+Six sigma koncept sastoji se od dvije glavne metodologije, ovisno o našim potrebama
+- DMADV- Define, Measure, Analyze, Design, Verify 
+- DMAIC- Define, Measure, Analyze, Improve, Control
+DMADV (Define, Measure, Analyze, Design, Verify) - koristi se za kreiranje novih proizvoda
+DMAIC (Define, Measure, Analyze, Improve, Control) - koristi se za poboljšanje postojećih proizvodnih procesa, najpopularnija metodologija u svijetu
+
 ## I3 - Obična pitanja
 
 - Navedite tri kriterija za postupak nabave za opisani primjer dan u zadatku?
