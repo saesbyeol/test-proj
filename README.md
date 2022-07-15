@@ -1,162 +1,52 @@
---I4
---1
-SELECT * FROM Stavka
-WHERE PopustUPostocima > 0.04
-ORDER BY RacunID DESC
+## Agile
 
---2
-UPDATE Proizvod
-SET 
-	CijenaBezPDV = CijenaBezPDV * 0.10,
-	BrojProizvoda = BrojProizvoda + '-B'
-WHERE Boja LIKE '%Plava'
+- 4 vrijednosti: individuals and interactions, working software, customer collaboration, responding to change
+- 12 principa: simplicity, working software, frequent delivery, sustainable development, motivated individuals, embrace change, technical exellence, self-organizing teams
+- APM - iterativini pristup dostavljanja projekta, rad na manjim dijelovima, trasnaprentnost pomoću vizualizacije, česte isporuke, brze povratne informacije
+- Faze APM-a: vizualziacija, spekulacija, istraživanje, zatvaranje
+- Agilne tehnologije: scrum, kanban, lean development, crystal, extreme programming
 
---3
--- ID 1
--- ID RACUN 75124
--- ID PROIZVOD 856
+## ITIL
 
-INSERT INTO Racun (DatumIzdavanja, BrojRacuna, KupacID)
-VALUES('2022-07-06', 'SO42069', 1)
+- ITIL je praksa upravljanja uslugama i procesima u IT okruženju; najprihvaćenija metodoligija IT service managementa među organizacijama diljem svijeta
+- Vođenje ITIL projekata: direktno (hijerarrhiski najviše tijelo prirema i provodi ITIL metodologiju), monitoring (odgovorna osoba vodi računa da se projekt odvija unutar pravila metodologije), evaluacija (odgovorna osoba vodi računa da su ispoštovani rokovi i kvaliteta samih isporuka tima)
+- Uloge ITIL metodologije: podržati i usmjeriti kompanije praktičkim i fleksibilnim okvirom u projektima okrenutima modernom IT sustavu, pomoći kompaniama posložiti ljudske, fizičke i digitalne resurse, pojednostaviti kompleksnosti IT sustava
+- Korištenje ITIL sustava: u IT kompanijema, za stvaranje vrijednosti zajedno s klijentima
+- 4 dimenzije ITIL-a: organizacija ljudi, informacijska tehnologija, partneri i dobavljači, protok vrijednosti i procesi
+- Principi ITIL metodologije: fokus na vrijednost, započetki s mjesta gdje smo sada, napredovati u koracima sa stalnim feedvavckom, kolaboracija i međusobno podržavanje, jednostavnost i praktičnost, automatizacija i optimizacija
 
-INSERT INTO Stavka (RacunID, Kolicina, ProizvodID, CijenaPoKomadu, PopustUPostocima, UkupnaCijena)
-VALUES (75124, 2, 856, 50, 0.25, 75)
+## PRINCE2
 
---4
-DELETE FROM Proizvod
-WHERE Boja LIKE '%Crna' AND PotkategorijaID IS NULL
+- PRINCE2 je metodologija upravljanja projektima koja je izrazito fokusirana na organizaciju i kontrolu, PRINCE2 je izrazito linearna i procesno zasnovana metodologija upravljanja projekta što je čini dobrom za poetnike
+- Ključne uloge: voditelj projekta, voditelj tima, kupac, članovi tima, projektni odbor, korisnik, administrator
+- Ključni aspekti: opseg projekta, troškovi, vremenski okviri, rizik, kvaliteta, prednosti
+- 7 faza projekta: početak, režija (projektni odbor pregledava sažetke i odlučuje što dalje), inicijalizacija (projektni odbor bira voditelja projekta koji će voditi i izraditi još detaljniji plan projekta), kontroliranje (voditelj projekta razlaže dijelove projekta kako bi ih učinio lakšim za upravljanje), upravljanje isporukom proizvoda (voditelj projekta osigurava da projekt napreduje glatko i da rezultati zadovoljavaju kvalitetu postavljenu u registru kvalitete), updavljanje granicama faze (na kraju svake faze projektni odbor održava pregled kako bi odlučio treba li projekt nastaviti napredovati), završetak
+- Vrste dokumentacije: poslovni slučaj, registar rizika, registar kvalitete, registar problema, dnevnik lekcija, dnevni dnevnik
+- 7 principa PRINCE2: opravdanje za nastavak poslovanja (najvažniji dokument je poslovni slučaj koji se pregledava i reviidra tijeom životnog ciklusa projekta), učenje iz iskustva, definirane su uloge i odgovornosti, upravljanje po fazama, upravljanje iznimkom, usredotočenje na proizvode, prilagođavanje projektnom okruženju
+- Prednosti: jasno definiran pristup projektu, projekti su podjeljeni u logičke faze, detaljan plan projektnih aktivnosti, pregledi faza koji osiguravaju da projekt sadrži poslovnu opravdanost, kontrola upravljanja koja sprječava odstupanja od izvornog plana
+- Mane: nije učinkovit za manje projekte
 
---5
--- GRADID 1
-Select * From Grad
-Select * FROM Kupac
+## I3 - Obična pitanja
 
-DELETE Telefon FROM Kupac
-WHERE GradID = 1
+- Navedite tri kriterija za postupak nabave za opisani primjer dan u zadatku?
 
--- 6
---IDKUPAC 156
-DELETE FROM Stavka
-WHERE RacunID = 69461
+Kvaliteta softwarea, organizacija, kvalifikacije i iskustvo osoblja, usluge nakon prodaje i tehnička pomoć
 
-DELETE  FROM Racun
-WHERE KupacID = 156
+- Objasnite koje su prednosti upravljanja rizicima.
 
-DELETE FROM Kupac
-WHERE Ime LIKE '%Gustavo'
+Bolje i lakše ostvarivanje ciljeva, bolje predviđanje i optimizranje raspoloživih resursa, bavljenje prioritetima…
 
---7
-SELECT k.Naziv AS Kategorija, p.Naziv as Proizvod from Proizvod as p
-INNER JOIN Potkategorija as pk ON pk.IDPotkategorija = p.PotkategorijaID
-INNER JOIN Kategorija as k ON k.IDKategorija = pk.KategorijaID
-WHERE k.Naziv IN ('Tights', 'Dijelovi')
+- Opišite razliku između preventivnog i reaktivnog upravljanja rizikom.
 
---8
-SELECT r.BrojRacuna, r.KreditnaKarticaID, kr.Broj as BrojKreditneKartice FROM Racun as r
-FULL OUTER JOIN KreditnaKartica as kr ON r.KreditnaKarticaID = kr.IDKreditnaKartica
-WHERE KreditnaKarticaID  IS NULL
+Preventivno - aktivnosti koje poduzimamo prije nego se rizik dogodi kako bismo ga izbjegli
 
---9
-SELECT r.BrojRacuna, k.Tip FROM KreditnaKartica as k
-RIGHT OUTER JOIN Racun as r on k.IDKreditnaKartica = r.KreditnaKarticaID
-ORDER BY k.Tip ASC
+Reaktivno - pratimo unaprijed isplanirane aktivnosti koje poduzimamo nakon što utvrdimo da se rizik dogodio
 
---10
-SELECT kom.Ime, kom.Prezime, r.KomercijalistID, r.DatumIzdavanja FROM Komercijalist as kom
-FULL OUTER JOIN Racun as r ON r.KomercijalistID = kom.IDKomercijalist
-WHERE r.KomercijalistID IS NULL	
+- Navedite kakvo upravljanje rizikom treba biti.
 
---11
+Rizik trebamo identificirati, proći kroz kvalitativnu analizu rizika i kvantativnu analizu, odgovoriti na rizik, te motriti za novi rizik
 
-SELECT r.BrojRacuna, p.Naziv, s.Kolicina, kk.Broj FROM Racun as r
-LEFT JOIN Stavka as s on s.RacunID =r.IDRacun
-LEFT JOIN Proizvod as p on p.IDProizvod = s.ProizvodID
-LEFT JOIN KreditnaKartica as kk on kk.IDKreditnaKartica = r.KreditnaKarticaID
-WHERE r.KreditnaKarticaID IS NULL OR r.KreditnaKarticaID IS NOT NULL
+## I2
 
---ISHOD 5
-
---1
-SELECT k.Ime, k.Prezime + '...' as Prezime
-FROM Kupac as k
-WHERE LEN(k.Prezime) > 5
-
---2
-SELECT max(DATEDIFF(year, r.DatumIzdavanja, GETDATE())) AS Razlika, min(DATEDIFF(year, r.DatumIzdavanja, GETDATE())) AS Razlika
-FROM Racun AS r
-
---3
-SELECT COUNT(*) as IzdaniRacuni, SUM(s.UkupnaCijena) as UkupnaCijena FROM Racun as r
-INNER JOIN Stavka AS s ON s.RacunID = r.IDRacun
-WHERE DATEPART(month, r.DatumIzdavanja) > 9
-
---4
-SELECT DISTINCT kom.Ime, kom.Prezime AS ImePrezime, SUM(s.UkupnaCijena) as UkupnaCijena
-FROM Komercijalist as kom
-INNER JOIN Racun as r ON r.KomercijalistID = kom.IDKomercijalist
-INNER JOIN Stavka as s ON s.RacunID = r.IDRacun
-WHERE DATEPART(WEEKDAY, r.DatumIzdavanja) = 7
-GROUP BY kom.Ime, kom.Prezime
-HAVING SUM(s.UkupnaCijena) > 2000
-
-
--- ISHOD 6
---1
-SELECT r.IDRacun,(
-	SELECT AVG(s.UkupnaCijena)
-	FROM Stavka as s
-	WHERE s.RacunID IN (
-		SELECT r1.IDracun
-		FROM Racun as r1
-		WHERE r1.IDRacun = r.IDRacun)) as Prosjek
-		FROM Racun as r
-
---2
-SELECT DISTINCT kk.Tip
-FROM KreditnaKartica as kk
-WHERE kk.IDKreditnaKartica IN (
-	SELECT r.KreditnaKarticaID
-	FROM Racun as r
-	WHERE r.IDRacun IN (
-		SELECT s.RacunID
-		FROM Stavka as s
-		WHERE s.ProizvodID IN (
-		SELECT p.IDProizvod
-		FROM Proizvod AS p
-		WHERE p.Boja='crna'
-		)
-	)
-)
-
---3
-SELECT DISTINCT p.Naziv,
-(
-	SELECT SUM(st.Kolicina)
-	FROM Stavka as st
-	WHERE st.ProizvodID = p.IDProizvod
-) AS BrojProizvoda
-FROM Proizvod as p
-WHERE
-(
-	SELECT sum(st.Kolicina)
-	FROM Stavka as st
-	WHERE st.ProizvodID = p.IDProizvod
-) is not null
-
-ORDER BY 2 DESC 
-
-
-
---4
-SELECT kom.Ime, kom.Prezime, COUNT(r.IDRacun) 'Broj računa'
-FROM Komercijalist AS kom
-INNER JOIN Racun AS r ON kom.IDKomercijalist = r.KomercijalistID
-GROUP BY kom.Ime, kom.Prezime HAVING COUNT(*) >
-(
-	SELECT AVG(temp.broj_racuna_po_komercijalistu) FROM
-	(
-		SELECT COUNT(r.IDRacun) AS broj_racuna_po_komercijalistu
-		FROM Komercijalist as kom INNER JOIN Racun AS r ON kom.IDKomercijalist = r.KomercijalistID
-		GROUP BY kom.Ime, kom.Prezime
-	) AS temp
-)
+- Tehnički CSF (kvaliteta softwarea, brzina rada softwarea itd.), Legalni CSF (zaštita podataka klijenata itd.), Financijski CSF (cijena projekta)
+- CSF je kritični faktor uspjeha, dok KPI (Key Performance Indicator) predstavlja ključne pokazatelje izvršenja. CSF je rezultat misije i stratreških ciljeva organizacije. CSF za opsaini projekt bila bi sama aplikacija, a KPI kvaliteta aplikacije
