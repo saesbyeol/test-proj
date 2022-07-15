@@ -42,19 +42,18 @@ Osnovno načelo lean proizvodnje je da se proizvodi točno ono što kupac želi,
 
 ## RACI
 
-Responsible: osoba odgovorna za izvršavanje zadatka
-Accountable: osoba koja donosi odluke i koja poduzima korake za zadatak
-Consulted: osoba s kojom će se komunicirati u svezi donošenja odluka i određenih zadataka
-Informed: osoba koja će biti izvještena o odlukama i poduzetih akcija tijekom projekta
-Koristi se da informira organizaciju o radnom preopterećenju svojih zaposlenika, smanjuje nesporazume, povećava produktivnost, štedi vrijeme 
-Prednosti - održavanje otvorene komunikacije sa svim sudionicima, izbjegavanje preopterećenja uključenih sa zadacima i nepotrebnim informacija, izbjegavamo previše ljudi koji žele nudit doprinos za neki zadatak, pomaže sudionicima da se pripreme za budući utjecaj projekta na njihov rad
-Nedostaci - može se provesti previše vremena za stvaranje RACI matrice za jednostavno projekte, uloge možda neće jasno ilustrirati članov doprinos u projektu, sudionici će biti zbunjeni ako ne razumiju razliku pojmova
-ARPA
-Accountable – osoba odgovorna za uspjeh biznisa
-Responsible – jedno ili dvoje ljudi koji su odgovorni da se rad unutar projekta odvija na svakodnevnoj bazi
-Participant – osobe koje izdvajaju vrijeme i resurse za podršku realizaciji projekta
-Advisor – ljudi koji su konzultirani na jedan ili više aspekta, ali nemaju autoritet donošenja odluke
-RASCI (isto kao RACI samo što ima i S(support)) - brzo riješite sukobe u projektu unutar grupa, učinkovito upravljanje projektima, uklonite sve zabune dodjeljivanjem specifičnih zadataka svakom članu projekte grupe
+- Responsible: osoba odgovorna za izvršavanje zadatka
+- Accountable: osoba koja donosi odluke i koja poduzima korake za zadatak
+- Consulted: osoba s kojom će se komunicirati u svezi donošenja odluka i određenih zadataka
+- Informed: osoba koja će biti izvještena o odlukama i poduzetih akcija tijekom projekta
+- Koristi se da informira organizaciju o radnom preopterećenju svojih zaposlenika, smanjuje nesporazume, povećava produktivnost, štedi vrijeme
+- Prednosti - održavanje otvorene komunikacije sa svim sudionicima, izbjegavanje preopterećenja uključenih sa zadacima i nepotrebnim informacija, izbjegavamo previše ljudi koji žele nudit doprinos za neki zadatak, pomaže sudionicima da se pripreme za budući utjecaj projekta na njihov rad
+- Nedostaci - može se provesti previše vremena za stvaranje RACI matrice za jednostavno projekte, uloge možda neće jasno ilustrirati članov doprinos u projektu, sudionici će biti zbunjeni ako ne razumiju razliku pojmova
+- ARPA Accountable – osoba odgovorna za uspjeh biznisa
+- Responsible – jedno ili dvoje ljudi koji su odgovorni da se rad unutar projekta odvija na svakodnevnoj bazi
+- Participant – osobe koje izdvajaju vrijeme i resurse za podršku realizaciji projekta
+- Advisor – ljudi koji su konzultirani na jedan ili više aspekta, ali nemaju autoritet donošenja odluke
+- RASCI (isto kao RACI samo što ima i S(support)) - brzo riješite sukobe u projektu unutar grupa, učinkovito upravljanje projektima, uklonite sve zabune dodjeljivanjem specifičnih zadataka svakom članu projekte grupe
 
 ## Scrum
 
