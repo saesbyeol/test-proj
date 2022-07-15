@@ -242,7 +242,7 @@ Pareto analiza
 Glavne projektne uloge za obuhvat
 - Voditelj projekta
 - Projektni tim
-- Sponzor
+- Sponzor 
 Obuhvat - definira i kontrolira što je uključeno i što nije uključeno u projekt, definirajte obuhvat dobro da biste njime učinkovito upravljali kasnije 
 Obuhvat visoke razine - definiranje što je izvan obuhvata
 Obuhvati niske razine
