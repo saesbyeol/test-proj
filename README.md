@@ -154,6 +154,146 @@ identificirane rizik), evidencija praćenja rizika (sumarizira sve projektne riz
 - PM2 upravljanje korištenjem vanjskuh usluga: upravljački odbor, upravljački odbor, projektni menađer osigurava da se koriste radne metode, projektni menađer provjerava privremene i finalne isporuke, projektni menađer osigurava da se obavezno formalno odobrenje izvrši na vrijeme i prema standardima, projektni menađer nadzire troškove i rokove, projektni menađer upravlja izjenama u eksternim poslovima, PM izvođača izvještava projektnog menađera
 - NABAVA 4 ključna pokazatelja: dogovor oko potreba opcija i nabave (identifikacija potreba i opcija - postupak određivanja koje resurse ili suluge je potrebno nabaviti, make or buy strategija, mjere: definira razloge, priprema, sastavlja ili prikuplja potrebne informacije, definira natječajnu dokumentaciju i kriterije odabira na osnovi potreba, podupire procese i postupke pripreme nabave), doprinos vrednovanju i odabiru dobavljača i partnera (vodielj osigurava identifikaciju, vredovanje i odabir mogućih partnerskih organizacija, mjere: objavljuje natječaje, odrađuje korake u procesu odabira dobavljača, definira sadržaj natječajne dokumentacije, služi se kriterijima odabira, usklađuje postupke sa službenim propisima o nabavi, predlaže modele partnerstva ), doprinos pregovaranju oko odredbi i uvjeta ugovora te postzitanje odgovora ciljevima projekta (određuje ciljeve o kojima će pregovarati, raspoznaje različite forme ugovora, poznaje termine i uvjete ugovora, pregovara o ugovoru), kontrola privredbe ugovra, rješavanje problema (provodi mjere za upravljanje realizacijom ugovora, identificira odstupanje od ugovora, rješava povrede ugovora, uključuje pravne odjele, rješava sporove, dovršava i prekida dogovorne poslovne odnose)
 
+## Provedba i kontrola projekta
+
+Upravljanje vremenskim rasporedom i proračunom
+- Opći proces
+	- Redoviti pregled rasporeda
+	- Ažuriranje rasporeda trenutnim informacijama
+	- Određivanje postoje li bilo koje druge aktivnosti koje bi trebale biti dovršene, ali nisu 
+	- Preraspoređivanje preostalog posla kako bi vidjeli da li će on biti dovršen unutar originalnog angažmana, troškova i trajanja 
+	- Evaluacija kritičnog puta projekta
+	- Pregled situacije rasporeda
+	- Pokretanje dodatnih izvješća, po potrebi, iz alata za upravljanje projektom
+	- Promatranje drugih znakova koji naznačuju da je projekt u nevolji
+	- Na mjesečnoj osnovi - osigurati da je posao razvijen za slijedeća tri mjeseca, pregled i analiza proračuna
+Upravljanje vremenskom rasporedom
+- Znakovi problema za trajanje
+	- Aktivnosti započinju imati tren iza rasporeda
+	- Mala odstupanja započinju rasti, posebno rano na projektu
+	- Raspored nije ažuriran
+	- Raspored nije dovoljno detaljan
+	- Raspored ne pokazuje sav preostali posao
+- Povrataka na raspored
+	- Prekovremeni rad
+	- Zamjena resursa
+	- Re alociranje resursa na kritični put
+	- Kontrola svih vremenskih ograničenih aktivnosti
+	- Unaprjeđenje procesa
+	- Ubrzan raspored
+	- Poboljšanje morala
+	- Dodavanje resursa
+Upravljanje proračunom
+- Znakovi problema za proračun
+	- Prema rasporedu, ali iznad proračuna
+	- Prema proračunu ali iza rasporeda
+	- Napravljen posao je iznad odobren povelje projekta ili poslovnih zahtjeva
+	- Prekoračenje proračuna ali su neki fiksni izdaci došli ranije nego što je očekivano
+	- Prekoračenje proračuna ali također i ispred rasporeda
+- Povratak projekta na proračun
+	- Neplaćeni prekovremeni rad
+	- Zamjena ljudskih resursa
+	- Eliminacija ili zamjena troškova izdataka
+	- Unaprjeđivanje procesa
+	- Korištenje rezerve proračuna za nepredviđeno
+	- Zahtijevanje većeg proračuna
+	- Smanjenje obuhvata
+Problem je situacija u projektu koja će spriječiti napredak projekta i oko kojeg nije postignut sporazum
+Rizik nije problem. Problem može biti rizik čije je vrijeme došlo i čije je rješenje izvan kontrole projekta
+- Problemi = postojeći događaji
+- Rizici = budući događaji
+Učinak nerješavanja problema
+- Ako se pusti neriješenim, problem će spriječiti napredak projekta kašnjenjem ili zaustavljanjem aktivnosti
+- Nekontrolirani problemi mogu voditi prema
+	- Povećanje troškova 
+	- Značajnim kašnjenjem
+	- Nižom kvalitetom
+	- Nezadovoljstvom
+Učinak rješavanja problema
+- Rješavanje predmeta može rezultirati:
+	- Promjenom obuhvata,
+	- Promjenom rasporeda
+	- Promjenom proračuna
+	- Prekidanjem projekta
+Koncept upravljanja problemima 
+- Proces upravljanja problemima započinje na početku projekta i nastavlja se kroz život projekta
+- Iterativni proces - projektni tim aktivno traži, identificira i rješava probleme tokom projekta
+Životni ciklus upravljanja problemima
+- Identifikacija problema -> Analiza problema -> Rješavanje problema -> Praćenje i Izvještavanje problemima -> Identifikacija problema
+Plan upravljanja problemima
+- Dokumentira plan voditelj projekta o načinu baratanja sa problemima projekta
+- Pokriva proces za:
+	- Identifikaciju problema
+	- Analizu problema
+	- Rješavanje problema
+	- Praćenje i izvještavanje problemima
+Analiza uzorka i posljedica
+- Riblja kost dijagram /  Ishikawa dijagram
+	- Omogućuje izlaganje različ9tig kategorija uzroka
+	- Potiče kreativnost kroz proces razmišljanja
+	- Omogućuje vizualnu sliku problemima i potencijalnih kategorija uzroka 
+Pareto analiza
+- Otkriveni višestruki međusobno povezani problemi ili zajednički problemi s višestrukim uzorcima
+- Prikupljanje metrike koliko se puta svaki problemi ili uzrok pojavi
+- Svrha je razmatranje problema i određivanje njihove učestalosti pojave
+
+## Upravljanje promjenama
+
+Glavne projektne uloge za obuhvat
+- Voditelj projekta
+- Projektni tim
+- Sponzor
+Obuhvat - definira i kontrolira što je uključeno i što nije uključeno u projekt, definirajte obuhvat dobro da biste njime učinkovito upravljali kasnije 
+Obuhvat visoke razine - definiranje što je izvan obuhvata
+Obuhvati niske razine
+- Zahtjevi
+	- Potrebe, želje i očekivanja interesnih sudionika su analizirane i pretvorne u zahtjeve
+Tipovi zahtjeva
+- Produkt / ne funkcionalni zahtjevi
+Lažni zahtjevi
+- Kriva uloga
+	- "Ja sam korisnik, ali mislim da biste trebali koristit web tehnologije na ovom projektu"
+Upravljanje obuhvatom
+- Promjene su neizbježne, ali su jedan od glavnih razloga za neuspjeh projekta 
+- Preaktivno upravljanje promjenama je ključ za uspjeh projekta
+- Većina zahtjeva za promjenama rezultira od:
+	-  Eksterne promjene
+	- Interni problemi projekta
+	- Problemi sa zahtjevima
+- Promjena obuhvata projekta su u redu ako je:
+	- Shvaćena poslovna vrijednost
+	- Shvaćena je utjecaj na projekt
+	- Sponzor je odredio da je promjena opravdana
+- Upravljanje obuhvatom svodi se na uvjerenje sponzora na donošenje odluka koje će rezultirati promjenama u projektnom obuhvatu
+Mali zahtjevi promjena
+- Grupiranje malih zahtjeva promjena
+- Diskrecija voditelja projekta
+	- Postavljanje razine tolerancije. Voditelj projekta i voditelj klijenta mogu donosit odluke promjene obuhvata
+- Proračun za nepredviđeno za promjene obuhvata
+Tehnike
+- Ne koriste rezervu za nepredviđeno za promjene obuhvata
+- Zamrznite zahtjeve promjena obuhvata u kasnim fazama projekta
+- Osigurajte da samo sponzor odobrava promjene
+- Uključite odgođene dobiti u troškove promjene obuhvata
+Procedure upravljanja promjenama
+- Izrada procedura unaprijed
+- Osigurajte da svi znaju procedure
+- Pridobite odobrenje sponzora za procedure 
+Procedure upravljanja promjenama
+- Zatražite zahtjev potencijalne promjene obuhvata
+- Unesite zahtjev u evidencije promjena obuhvata
+- Za velike promjene, odredite da li je zahtijevano odobrenje sponzora prije nego istraživanje započne
+- Za male promjene
+	- Odredite da li voditelj projekta i klijent imaju diskreciju 
+	- Odredite da li se promjena može grupirati
+- Pridružite promjenu obuhvata članu projektnog tima na istraživanje
+- Pitajte osobu koja vam je dala zahtjev da vam identificira poslovnu vrijednost
+- Odnesite sponzoru zahtjev za promjenu obuhvata, poslovnu vrijednosti i utjecaj
+- Dokumentirajte rješenje na formularu zahtjeva promjene obuhvat i evidenciju promjene obuhvata 
+- Dodajte odgovarajuće aktivnosti u raspored
+- Ažurirajte povelju projekta ako je potrebno
+- Komunicirajte status interesnim sudionicima kroz status izvješća 
+
 ## I3 - Obična pitanja
 
 - Navedite tri kriterija za postupak nabave za opisani primjer dan u zadatku?
