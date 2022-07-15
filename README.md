@@ -122,6 +122,38 @@ Six sigma koncept sastoji se od dvije glavne metodologije, ovisno o našim potre
 DMADV (Define, Measure, Analyze, Design, Verify) - koristi se za kreiranje novih proizvoda
 DMAIC (Define, Measure, Analyze, Improve, Control) - koristi se za poboljšanje postojećih proizvodnih procesa, najpopularnija metodologija u svijetu
 
+## Rizici
+
+- Rizik - vjerojatnost da će se nepoželjni događaj desiti kao i značaj posljedice takvog događaja
+- Karatkeristike: odredivi događaji koje se može desiti u budućnosti, vjerojatnost pojave u budućnosti, posljedice pojave
+- Pozitivni rizici su prilike: oredivi događaji od kojih možemo ostvariti dobit
+- Utjecaj na precepciju rizika: kontrola, dostupne informacije, vrijeme
+- Proces upravljanja rizikom: identifikacija rizika (tehnike: brainsotrming, intervjuiranje, identifikacija izvornog uzroka), kvalitativna analiza rizika, kvantitativna analiza rizika, odgovor na rizike, motrenja poznatih i traženja novih rizika
+- Kvalitativna analiza rizika: metoda priotiziracije rizika kako
+bi se odredilo koji bi rizik trebao biti prvo riješen
+- Kvantativna analiza rizika: koriste se formalnije, rigoroznije, sofisticiranije tehnike da bi se postigla objektivnija analiza rizika
+- Odogovori na rizik: ostaviti ga kakav jest, promatrati rizik, izbjegavati rizik, prebaciti rizik, prihvatiti/ublažiti rizik
+- Kontrola rizika: praćenje tekućih planova rizika - osigurava uspješno izvršenja plana rizika, određuje da li se promijenila vjerojatnost ili utjecaj rizika
+- Rezerve: iznos nobca ili vremena koji je dodan projektu na račun rizika
+- Pregled predložaka rizika: formular podneska rizika (dokumentira i komunicira inicijalne analize za novo
+identificirane rizik), evidencija praćenja rizika (sumarizira sve projektne rizike za snimkustanja bilo kojih promjena u formularu rizika prije perioda izvješćivanja)
+
+## Nabava
+
+- proces kupnje ili pribavljanja radova roba ili/i usloga od vanjskih dobavljača
+- svrha - pribavljuju se resursi koji nisu dostupni unutar organizacije
+- make or buy - proces nabave omogućuje organizaciji da dođe do neophodnih resursa koje sama ne posjeduje, ondosno ne može proizvesti
+- CPV (Common porcurment vocubaluray) - jedinstveni riječni javne nabave, predstavlja jednistvenih klasifikacijski sustav s ciljem ujednačenja oznaka i opisa predmeta nastave
+- Postupak nabave: otvoreni postupak, ograničen postupak, natjecateljski postupak uz pregovore, natjecatleljski dijalog, partnerstvo za inovacije, pregovarački postupak bez prethodne objave poziva na nadmetanje
+- kriteriji: kriterij za iskuljučenje, za odabir gospodarskog subjekta, za odabir ponude
+- ENP - najbolji omjer između cijene i kvalitete, na temelju kriterija
+- ENP kriteriji: kvaliteta (tehnička vrijednost, estetske i funkcionalne značajke, pristupačnost), organizacijska, kvalifickacije i iskustvo osoblja, usluge nakon prodaje i tehnička pomoć
+- Zelena javna nabava: postupak kod kojeg javna tijela nastoje naručiti robu, usluge i radove koji tijekom svojeg životnog ciklusa imaju manji učinak na okoliš od robe, usluga i radova (s istom osnovnom funkcijom) koje bi inače naručili
+- Upravljanje nabavom u projektima: PMBOK (Planiranje nabave, provedba nabave, kontrola nabave), PM2 (plan korištenja vanjskih usluga)
+- PM2 koraci: identificirati elemente koji će biti izdvojeni, odlučiti o tome tko će povezati izvođače i tko može biti potpisnik ugovora, navesti evaluacijske kriterije za izvođače, identificirati ograničenja, identificirati metode nabave, identificirati ljude unutar organizacije koji moraju odobriti nabavu, napraviti vremenski plan, identificirati dokumentaciju dobavljačla
+- PM2 upravljanje korištenjem vanjskuh usluga: upravljački odbor, upravljački odbor, projektni menađer osigurava da se koriste radne metode, projektni menađer provjerava privremene i finalne isporuke, projektni menađer osigurava da se obavezno formalno odobrenje izvrši na vrijeme i prema standardima, projektni menađer nadzire troškove i rokove, projektni menađer upravlja izjenama u eksternim poslovima, PM izvođača izvještava projektnog menađera
+- NABAVA 4 ključna pokazatelja: dogovor oko potreba opcija i nabave (identifikacija potreba i opcija - postupak određivanja koje resurse ili suluge je potrebno nabaviti, make or buy strategija, mjere: definira razloge, priprema, sastavlja ili prikuplja potrebne informacije, definira natječajnu dokumentaciju i kriterije odabira na osnovi potreba, podupire procese i postupke pripreme nabave), doprinos vrednovanju i odabiru dobavljača i partnera (vodielj osigurava identifikaciju, vredovanje i odabir mogućih partnerskih organizacija, mjere: objavljuje natječaje, odrađuje korake u procesu odabira dobavljača, definira sadržaj natječajne dokumentacije, služi se kriterijima odabira, usklađuje postupke sa službenim propisima o nabavi, predlaže modele partnerstva ), doprinos pregovaranju oko odredbi i uvjeta ugovora te postzitanje odgovora ciljevima projekta (određuje ciljeve o kojima će pregovarati, raspoznaje različite forme ugovora, poznaje termine i uvjete ugovora, pregovara o ugovoru), kontrola privredbe ugovra, rješavanje problema (provodi mjere za upravljanje realizacijom ugovora, identificira odstupanje od ugovora, rješava povrede ugovora, uključuje pravne odjele, rješava sporove, dovršava i prekida dogovorne poslovne odnose)
+
 ## I3 - Obična pitanja
 
 - Navedite tri kriterija za postupak nabave za opisani primjer dan u zadatku?
