@@ -318,3 +318,7 @@ Rizik trebamo identificirati, proći kroz kvalitativnu analizu rizika i kvantati
 
 - Tehnički CSF (kvaliteta softwarea, brzina rada softwarea itd.), Legalni CSF (zaštita podataka klijenata itd.), Financijski CSF (cijena projekta)
 - CSF je kritični faktor uspjeha, dok KPI (Key Performance Indicator) predstavlja ključne pokazatelje izvršenja. CSF je rezultat misije i stratreških ciljeva organizacije. CSF za opsaini projekt bila bi sama aplikacija, a KPI kvaliteta aplikacije
+
+## Formule
+EF=ES+T-1
+LS=LF-T+1
